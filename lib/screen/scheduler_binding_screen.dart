@@ -12,7 +12,7 @@ class ShcedulerBindingScreen extends StatefulWidget {
 }
 
 class _ShcedulerBindingScreenState extends State<ShcedulerBindingScreen> {
-  double angle = 0.0; // アニメーションするプロパティ
+  double angle = 0.0;
   int? animationId;
 
   void _repeat() {
