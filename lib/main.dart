@@ -1,7 +1,8 @@
+import 'package:animation_sample/screen/animated_widget_screen.dart';
 import 'package:animation_sample/screen/animation_controller_screen.dart';
 import 'package:animation_sample/screen/scheduler_binding_screen.dart';
 import 'package:animation_sample/screen/ticker_screen.dart';
-import 'package:animation_sample/screen/tween_screen.dart';
+import 'package:animation_sample/screen/animation_and_animatable_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -73,12 +74,22 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ListTile(
-              title: const Text('TweenScreen'),
+              title: const Text('AnimationAndAnimatableScreen'),
               onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const TweenScreen()));
+                        builder: (context) =>
+                            const AnimationAndAnimatableScreen()));
+              },
+            ),
+            ListTile(
+              title: const Text('AnimatedWidgetScreen'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const AnimatedWidgetScreen()));
               },
             ),
           ],
