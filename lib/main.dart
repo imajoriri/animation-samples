@@ -1,5 +1,6 @@
 import 'package:animation_sample/screen/animated_widget_screen.dart';
 import 'package:animation_sample/screen/animation_controller_screen.dart';
+import 'package:animation_sample/screen/implicitly_animated_widget_screen.dart';
 import 'package:animation_sample/screen/scheduler_binding_screen.dart';
 import 'package:animation_sample/screen/ticker_screen.dart';
 import 'package:animation_sample/screen/animation_and_animatable_screen.dart';
@@ -90,6 +91,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     context,
                     MaterialPageRoute(
                         builder: (context) => const AnimatedWidgetScreen()));
+              },
+            ),
+            ListTile(
+              title: const Text('ImplicitylyAnimatedWidgetScreen'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            const ImplicitylyAnimatedWidgetScreen()));
               },
             ),
           ],
