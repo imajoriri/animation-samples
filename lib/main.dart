@@ -1,4 +1,6 @@
+import 'package:animation_sample/screen/animation_controller_screen.dart';
 import 'package:animation_sample/screen/scheduler_binding_screen.dart';
+import 'package:animation_sample/screen/ticker_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,12 +44,31 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             ListTile(
-              title: const Text('ListTile with Hero'),
+              title: const Text('ShcedulerBindingScreen'),
               onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const ShcedulerBindingScreen()));
+              },
+            ),
+            ListTile(
+              title: const Text('TickerScreen'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const TickerScreen()));
+              },
+            ),
+            ListTile(
+              title: const Text('AnimationControllerScreen'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            const AnimationControllerScreen()));
               },
             ),
           ],
