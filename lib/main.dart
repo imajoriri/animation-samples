@@ -1,6 +1,7 @@
 import 'package:animation_sample/screen/animation_controller_screen.dart';
 import 'package:animation_sample/screen/scheduler_binding_screen.dart';
 import 'package:animation_sample/screen/ticker_screen.dart';
+import 'package:animation_sample/screen/tween_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -69,6 +70,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(
                         builder: (context) =>
                             const AnimationControllerScreen()));
+              },
+            ),
+            ListTile(
+              title: const Text('TweenScreen'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const TweenScreen()));
               },
             ),
           ],
