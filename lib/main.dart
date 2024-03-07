@@ -1,5 +1,6 @@
 import 'package:animation_sample/screen/animated_widget_screen.dart';
 import 'package:animation_sample/screen/animation_controller_screen.dart';
+import 'package:animation_sample/screen/gravity_simulation_screen.dart';
 import 'package:animation_sample/screen/implicitly_animated_widget_screen.dart';
 import 'package:animation_sample/screen/scheduler_binding_screen.dart';
 import 'package:animation_sample/screen/ticker_screen.dart';
@@ -101,6 +102,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(
                         builder: (context) =>
                             const ImplicitylyAnimatedWidgetScreen()));
+              },
+            ),
+            ListTile(
+              title: const Text('GravitySimulationScreen'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const GravitySimulationScreen()));
               },
             ),
           ],
