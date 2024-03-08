@@ -3,6 +3,7 @@ import 'package:animation_sample/screen/animation_controller_screen.dart';
 import 'package:animation_sample/screen/gravity_simulation_screen.dart';
 import 'package:animation_sample/screen/implicitly_animated_widget_screen.dart';
 import 'package:animation_sample/screen/scheduler_binding_screen.dart';
+import 'package:animation_sample/screen/spring_simulation_screen.dart';
 import 'package:animation_sample/screen/ticker_screen.dart';
 import 'package:animation_sample/screen/animation_and_animatable_screen.dart';
 import 'package:flutter/material.dart';
@@ -111,6 +112,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     context,
                     MaterialPageRoute(
                         builder: (context) => const GravitySimulationScreen()));
+              },
+            ),
+            ListTile(
+              title: const Text('SpringSimulationScreen'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SpringSimulationScreen()));
               },
             ),
           ],
