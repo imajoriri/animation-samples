@@ -1,3 +1,4 @@
+import 'package:animation_sample/screen/animated_builder_screen.dart';
 import 'package:animation_sample/screen/animated_widget_screen.dart';
 import 'package:animation_sample/screen/animation_controller_screen.dart';
 import 'package:animation_sample/screen/gravity_simulation_screen.dart';
@@ -103,6 +104,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(
                         builder: (context) =>
                             const ImplicitylyAnimatedWidgetScreen()));
+              },
+            ),
+            ListTile(
+              title: const Text('AnimatedBuilderScreen'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const AnimatedBuilderScreen()));
               },
             ),
             ListTile(
