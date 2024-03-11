@@ -72,8 +72,8 @@ class _AnimationControllerScreenState extends State<AnimationControllerScreen>
             _start();
           }
         },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: 'Play Animation',
+        child: const Icon(Icons.play_arrow),
       ),
     );
   }

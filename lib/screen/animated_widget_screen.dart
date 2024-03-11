@@ -67,8 +67,8 @@ class _AnimatedWidgetScreenState extends State<AnimatedWidgetScreen>
             _start();
           }
         },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: 'Play Animation',
+        child: const Icon(Icons.play_arrow),
       ),
     );
   }

@@ -65,8 +65,8 @@ class _ShcedulerBindingScreenState extends State<ShcedulerBindingScreen> {
             _stop();
           }
         },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: 'Play Animation',
+        child: const Icon(Icons.play_arrow),
       ),
     );
   }

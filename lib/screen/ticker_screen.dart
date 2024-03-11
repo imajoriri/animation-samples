@@ -59,8 +59,8 @@ class _TickerScreenState extends State<TickerScreen> {
             _start();
           }
         },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: 'Play Animation',
+        child: const Icon(Icons.play_arrow),
       ),
     );
   }

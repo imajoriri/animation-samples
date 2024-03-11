@@ -53,7 +53,7 @@ class _AnimationAndAnimatableScreenState
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('TweenScreen'),
+        title: const Text('AnimationAndAnimatableScreen'),
       ),
       body: Align(
         alignment: animation.value,
@@ -67,8 +67,8 @@ class _AnimationAndAnimatableScreenState
             _start();
           }
         },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: 'Play Animation',
+        child: const Icon(Icons.play_arrow),
       ),
     );
   }

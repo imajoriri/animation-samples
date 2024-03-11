@@ -67,8 +67,8 @@ class _GravitySimulationScreenState extends State<GravitySimulationScreen>
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _start,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: 'Play Animation',
+        child: const Icon(Icons.play_arrow),
       ),
     );
   }

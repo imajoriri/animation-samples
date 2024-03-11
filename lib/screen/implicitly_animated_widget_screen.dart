@@ -17,7 +17,7 @@ class _ImplicitylyAnimatedWidgetScreenState
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('AnimatedWidgetScreen'),
+        title: const Text('ImplicitylyAnimatedWidgetScreen'),
       ),
       body: AnimatedAlign(
         alignment: alignment,
@@ -37,8 +37,8 @@ class _ImplicitylyAnimatedWidgetScreenState
             });
           }
         },
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        tooltip: 'Play Animation',
+        child: const Icon(Icons.play_arrow),
       ),
     );
   }
